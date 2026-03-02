@@ -29,6 +29,22 @@ const WrappedStory = ({ isOpen, onClose }) => {
     }
   };
 
+  // 🧠 A Mágica: Detecção Inteligente de Clique
+  const handleTap = (e) => {
+    const screenWidth = window.innerWidth;
+    const clickX = e.clientX;
+
+    // Se clicou na faixa da esquerda (30% da tela)
+    if (clickX < screenWidth * 0.3) {
+      prevSlide();
+    } 
+    // Se clicou na faixa da direita (30% da tela)
+    else if (clickX > screenWidth * 0.7) {
+      nextSlide();
+    }
+    // O meio da tela (40%) fica totalmente livre para rolagem sem disparar acidentalmente
+  };
+
   const slide = wrappedData[currentSlide];
 
   return (
@@ -39,7 +55,7 @@ const WrappedStory = ({ isOpen, onClose }) => {
       {/* Conteúdo Seguro */}
       <div className="relative z-10 flex flex-col h-full pt-14 pb-6 px-4">
         
-        {/* Barras de Progresso (z-50 para sempre ficarem acima de tudo) */}
+        {/* Barras de Progresso */}
         <div className="flex gap-1 mb-4 shrink-0 relative z-50">
           {wrappedData.map((_, index) => (
             <div key={index} className="h-1 flex-1 bg-white/30 rounded-full overflow-hidden">
@@ -51,20 +67,18 @@ const WrappedStory = ({ isOpen, onClose }) => {
           ))}
         </div>
 
-        {/* Botão Fechar (z-50) */}
+        {/* Botão Fechar */}
         <div className="flex justify-end mb-2 shrink-0 relative z-50">
           <button onClick={onClose} className="p-2 bg-black/20 rounded-full backdrop-blur-md hover:bg-black/40 transition-colors">
             <X size={24} />
           </button>
         </div>
 
-        {/* ÁREAS DE CLIQUE CORRIGIDAS */}
-        {/* Agora com z-40 e top-20/bottom-0, elas ficam por cima do texto e cobrem a tela inteira nas laterais */}
-        <div className="absolute top-20 bottom-0 left-0 w-1/4 z-40 cursor-pointer" onClick={prevSlide}></div>
-        <div className="absolute top-20 bottom-0 right-0 w-1/4 z-40 cursor-pointer" onClick={nextSlide}></div>
-
-        {/* CONTAINER ROLÁVEL */}
-        <div className="flex-1 overflow-y-auto hide-scrollbar relative z-30 px-2">
+        {/* CONTAINER ROLÁVEL COM DETECÇÃO INTELIGENTE (Sem "Vidros Invisíveis") */}
+        <div 
+          className="flex-1 overflow-y-auto hide-scrollbar relative z-30 px-2"
+          onClick={handleTap}
+        >
           <AnimatePresence mode="wait">
             <motion.div
               key={currentSlide}
@@ -72,7 +86,7 @@ const WrappedStory = ({ isOpen, onClose }) => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 1.1, y: -20 }}
               transition={{ type: "spring", bounce: 0.4, duration: 0.5 }}
-              className="flex flex-col items-center justify-center min-h-full gap-6 pb-12"
+              className="flex flex-col items-center justify-center min-h-full gap-6 pb-12 cursor-pointer"
             >
               <h2 className="text-3xl font-extrabold tracking-tight leading-tight drop-shadow-lg text-center mt-auto">
                 {slide.title}

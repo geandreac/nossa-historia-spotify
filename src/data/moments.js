@@ -2,7 +2,7 @@ export const moments = [
   {
     id: 1,
     title: "A Nossa História",
-    artist: "Geandre & Amorzinho",
+    artist: "Geandre & Ezharih",
     cover: "/capa.jpg", 
     audioUrl: "/nossa-musica.mp3", 
     lyrics: `Eu lembro perfeitamente do dia 1 de junho de 2024. Parece que foi ontem. A gente saiu pra ir ao cinema assistir Planeta dos Macacos kkkkk e, sendo bem sincero, o filme virou só detalhe. O que realmente marcou aquele dia foi como eu me senti ao seu lado. Eu me diverti muito, mas muito mesmo. Sua risada, seu jeito, a leveza da conversa… tudo parecia tão natural, tão fácil. Eu já saí dali diferente, mas talvez ainda não tivesse entendido o quanto.
@@ -27,7 +27,7 @@ Eu agradeço sempre a Deus por ter alguém como você na minha vida. Você é ca
 Se eu pudesse voltar no tempo, escolheria sair com você de novo naquele 1 de junho. E escolheria continuar todos os dias depois disso.
 
 Eu te amo. ❤️`,
-    context: "Lugar: Onde tudo começou | Data: 01/06/2024",
+    context: "Lugar: Cinema | Data: 01/06/2024",
     color: "from-rose-900/90" 
   }
 ];
