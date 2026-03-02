@@ -2,21 +2,32 @@ export const moments = [
   {
     id: 1,
     title: "A Nossa História",
-    artist: "Geandre & Ezharih",
+    artist: "Geandre & Amorzinho",
     cover: "/capa.jpg", 
     audioUrl: "/nossa-musica.mp3", 
-    lyrics: `Tudo começou naquele 1º de junho de 2024... Um cinema, Planeta dos Macacos, e eu mal sabia que ali a minha vida mudaria para sempre. Me diverti tanto naquele dia.
+    lyrics: `Eu lembro perfeitamente do dia 1 de junho de 2024. Parece que foi ontem. A gente saiu pra ir ao cinema assistir Planeta dos Macacos kkkkk e, sendo bem sincero, o filme virou só detalhe. O que realmente marcou aquele dia foi como eu me senti ao seu lado. Eu me diverti muito, mas muito mesmo. Sua risada, seu jeito, a leveza da conversa… tudo parecia tão natural, tão fácil. Eu já saí dali diferente, mas talvez ainda não tivesse entendido o quanto.
 
-Uma semana depois, fomos à igreja. Ali, eu senti uma conexão surreal com você. Uma paz, uma alegria e uma sensação de ser verdadeiramente livre. 
+Uma semana depois, nosso segundo encontro foi na igreja. E ali foi especial de um jeito que eu não sei explicar direito. Eu senti uma conexão muito forte com você. Me senti leve, feliz, em paz. Foi como se meu coração estivesse tranquilo, como se eu estivesse exatamente onde deveria estar. Eu realmente me senti livre naquele dia. Acho que ali começou algo muito maior do que só “gostar”.
 
-As coisas aconteceram rápido. Logo veio o nosso Dia dos Namorados no La Parrilla, você conhecendo a minha família, o aniversário da minha irmã... De repente, você já era parte da família. Foi rápido, sim, mas eu tenho a certeza absoluta de que sair com você naquele 1º de junho foi a melhor escolha da minha vida.
+Depois veio o Dia dos Namorados, nós fomos comer no La Parrilla, e eu lembro de olhar pra você e pensar que queria viver muitos outros dias assim ao seu lado. As coisas começaram a acontecer rápido. Você conheceu minha família, já estava no aniversário da minha irmã, conversando, sorrindo, se encaixando… quando eu vi, você já fazia parte de tudo. Parte da minha vida. Parte de mim.
 
-Você esperou três meses (obrigado pela paciência!), e no dia 11 de setembro de 2024, eu finalmente te pedi em namoro. 
+Foi rápido? Foi.
+Mas foi a melhor escolha que eu já fiz.
 
-Nós tivemos nossas brigas e nossas lutas. Poderíamos simplesmente ter deixado para lá, mas isso não é amor. Amor é isso que a gente faz: escolher melhorar um pelo outro para vivermos muitos e muitos anos juntos. 
+Tenho certeza que sair naquele 1 de junho foi uma das decisões mais importantes da minha vida. Depois de três meses, no dia 11 de setembro de 2024, eu te pedi em namoro. Você esperou com paciência, com carinho… e desde então estamos juntos.
 
-E aqui estamos nós. Viajando juntos, comemorando as vitórias um do outro e construindo uma vida. Eu agradeço a Deus todos os dias por ter alguém como você na minha vida. Eu te amo!`,
-    context: "Lugar: Cinema | Data: 01/06/2024",
+A gente já viveu tanta coisa. Conheci sua família, saímos muito, criamos memórias, fizemos planos, enfrentamos desafios. No final de 2025 e começo de 2026 viajamos juntos, conhecemos lugares novos, dividimos experiências que eu vou guardar pra sempre. Mas o mais bonito nunca foi o lugar. Sempre foi você estar comigo.
+
+E sim, tivemos brigas. Tivemos momentos difíceis. Em alguns deles seria mais fácil simplesmente deixar pra lá. Mas isso não é amor. Amor é ficar. Amor é melhorar um pelo outro. É reconhecer erro, amadurecer, aprender a conversar e crescer juntos. Amor é escolher a mesma pessoa todos os dias, mesmo quando não é fácil.
+
+E eu escolho você.
+
+Eu agradeço sempre a Deus por ter alguém como você na minha vida. Você é calma, é força, é alegria, é apoio. Você é lar. Eu tenho orgulho da nossa história, orgulho de quem estamos nos tornando juntos e muita fé no que ainda vamos viver.
+
+Se eu pudesse voltar no tempo, escolheria sair com você de novo naquele 1 de junho. E escolheria continuar todos os dias depois disso.
+
+Eu te amo. ❤️`,
+    context: "Lugar: Onde tudo começou | Data: 01/06/2024",
     color: "from-rose-900/90" 
   }
 ];
